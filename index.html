@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity Increment Decrement</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="card-container">
+        <img src="./img/hoddie.png" class="product-img" />
+        <div class="product-container">
+            <h1 class="product-title">ImpecGear Gym Bag</h1>
+            <p class="product-description">
+                Impecgear Unisex, Sports, Black Duffle, Gym Bag. Tough yet lightweight, Built of 600D Polyester W/ Heavy
+                vinyl Backing.
+            </p>
+            <div class="quantity-container">
+                <span class="product-price" id="product-price">₹ 550 </span>
+                <div class="quantity-btn-container">
+                    <img src="./img/minus.png" class="quantity-img" onclick="decrement()" />
+                    <span class="quantity-text" id="quantity-text">1</span>
+                    <img src="./img/add.png" class="quantity-img" onclick="increment()" />
+                </div>
+            </div>
+            <p class="quantity-total" id="quantity-total">Quantity : 1</p>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
